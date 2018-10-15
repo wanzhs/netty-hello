@@ -1,0 +1,23 @@
+# 应用根路径
+config:
+  base_path: D:\\meter
+
+# 日志路径
+logback:
+  logdir: ${config.base_path}\\logs\\meter-admin
+  appname: meter-admin
+  ##打印输出等级
+  level: debug
+
+#分布式事务日志记录
+atomikos:
+  logdir: ${config.base_path}\\logs\\meter-admin\\transaction-logs
+  logname: meter-admin-transaction
+
+
+  #数据库
+jdbc:
+  wanzhs:
+      url: 192.168.2.132
+      username: root
+      password: 123456
