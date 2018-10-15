@@ -1,6 +1,6 @@
-package com.baomidou.service;
+package com.imooc.service;
 
-import com.baomidou.entity.Users;
+import com.imooc.entity.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

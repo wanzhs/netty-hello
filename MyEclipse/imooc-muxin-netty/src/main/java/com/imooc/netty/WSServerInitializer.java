@@ -1,4 +1,4 @@
-package com.imooc.websocket;
+package com.imooc.netty;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
