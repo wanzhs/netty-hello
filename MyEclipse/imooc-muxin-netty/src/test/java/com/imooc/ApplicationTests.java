@@ -1,13 +1,10 @@
 package com.imooc;
 
-import com.imooc.entity.Users;
+import com.imooc.entity.User;
 import com.imooc.mapper.UsersMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
@@ -25,8 +22,8 @@ public class ApplicationTests {
 	}
 	@Test
 	public void testSql(){
-		Users users=new Users();
-		users.setUsername("John")
+		User user =new User();
+		user.setUsername("John")
 				.setId("1")
 				.setPassword("123456")
 				.setCid("123")
@@ -34,8 +31,8 @@ public class ApplicationTests {
 				.setFaceImageBig("peace")
 				.setNickname("Peter")
 				.setQrcode("qrcode");
-		usersMapper.insert(users);
-		List<Users> list=usersMapper.selectList(null);
+		usersMapper.insert(user);
+		List<User> list=usersMapper.selectList(null);
 		list.forEach(item->{
 			System.out.println(item);
 		});

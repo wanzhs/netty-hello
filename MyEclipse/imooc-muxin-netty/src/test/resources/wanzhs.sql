@@ -67,10 +67,10 @@ CREATE TABLE `t_driver`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Table structure for users
+-- Table structure for user
 -- ----------------------------
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users`  (
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
   `id` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `username` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `password` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
