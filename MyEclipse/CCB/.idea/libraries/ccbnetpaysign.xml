@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ccbnetpaysign">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ccbnetpaysign.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

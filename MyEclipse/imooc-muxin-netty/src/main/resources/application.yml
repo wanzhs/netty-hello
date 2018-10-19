@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: dev
+  #atomic配置
+  jta:
+    atomikos:
+      properties:
+        log-base-dir: ${atomikos.logdir}
+        log-base-name: ${atomikos.logname}
+  servlet:
+    multipart:
+      max-file-size: 20Mb
+      max-request-size: 20Mb
+
+#多数据源配置
+mysql:
+  datasource:
+    wanzhs:
+      url: jdbc:mysql://${jdbc.wanzhs.url}:3306/wanzhs?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${jdbc.wanzhs.username}
+      password: ${jdbc.wanzhs.password}
+      minPoolSize: 3
+      maxPoolSize: 25
+      maxLifetime: 20000
+      borrowConnectionTimeout: 30
+      loginTimeout: 30
+      maintenanceInterval: 60
+      maxIdleTime: 60
+      testQuery: select 1
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image:
+    width: 80
+    height: 80
+  tracker-list: 192.168.1.70:22122
+
+

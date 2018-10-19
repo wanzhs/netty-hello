@@ -1,0 +1,77 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, input, button, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+h1, h2, h3, h4, h5, h6, em, i {
+    font-weight: 100;
+    font-style: normal;
+}
+ul, ol, li {
+    list-style-type: none;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline: 0;
+}
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.separate-line {
+    width: 1px;
+    height: 15px !important;
+    line-height: 40px !important;
+    margin: 0 10px;
+    margin-top: 12px;
+    background: #5b5baa;
+}
+/*********С���Ǳ�**********/
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 1px;
+    border: 3px solid transparent;
+    border-top: 3px solid black;
+    transition: 0.5s;
+}
+.separate-line:after {
+    content: "";
+}
+.tn-menu .seperate-line + li {
+    margin-left: 0;
+}
+.colorred {
+    color: red !important;
+}
+.colore54077 {
+    color: #e54077 !important;
+}
+.color427def {
+    color: #427def !important
+}
+.color6347ed {
+    color: #6347ed !important;
+}
+.colorf7a831 {
+    color: #f7a831 !important;
+}
+.color3bc7b0 {
+    color: #3bc7b0 !important;
+}
+.clearborder-bottom {
+    border-bottom: none !important;
+}
